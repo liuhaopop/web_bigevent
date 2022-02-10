@@ -8,8 +8,17 @@
 </head>
 <body>
     <script>
-        // iframe :内嵌框架 语法: <iframe name="指定当前iframe的名称 fm" src="规定iframe中显示的文档的url">  </iframe>
-        // <a href="/1.html" target="fm"> </a>  href用来指定打开那个网址  target用来指定在哪打开网页;
+        // 1. iframe :内嵌框架 语法: <iframe name="指定当前iframe的名称 fm" src="规定iframe中显示的文档的url">  </iframe>
+        //    <a href="/1.html" target="fm"> </a>  href用来指定打开那个网址  target用来指定在哪打开网页;
+
+        // 2. 发起带身份认证的ajax请求时 需要在配置项中在加一个headers: { Authorization: localStorage.getItem('token') || '' }
+
+        // 3. 获取字符串的某一个字符 可以使用数组形式的选择 如:name = 'asd' ; name[1]返回值是s;
+
+        // 4. 使用JQ的$.ajaxPrefilter(function (options){} 对每一个ajax请求发起之前的配置项进行优化 更改满足需要的请求;
+
+        // 5.JQ中发起的ajax请求 1.成功执行success函数 2.失败执行error函数 3.无论成功失败都会执行complete函数
+
     </script>
 </body>
 </html>
