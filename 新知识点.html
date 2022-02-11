@@ -17,8 +17,22 @@
 
         // 4. 使用JQ的$.ajaxPrefilter(function (options){} 对每一个ajax请求发起之前的配置项进行优化 更改满足需要的请求;
 
-        // 5.JQ中发起的ajax请求 1.成功执行success函数 2.失败执行error函数 3.无论成功失败都会执行complete函数
+        // 5. JQ中发起的ajax请求 1.成功执行success函数 2.失败执行error函数 3.无论成功失败都会执行complete函数
 
+        // 6. 快速给表单赋值 使用layui中的form.val()方法 ;注意其中使用到了隐藏域<input type="hidden" name="id">;
+
+        // 7. 子页面调用父页面中的方法 使用window.parent.方法();
+
+        // 8. 使用cropper快速开发裁剪,按照步骤复制粘贴;
+
+        // 9. <input type="file" id="file" accept="image/png,image/jpg"> 使用accept属性可以设置选择文件的格式;
+
+        // 10 文件选择框监听到change事件后,可以通过e.target.files(伪数组)属性获取的选择的文件;
+
+        // 11.base64文件减少一些不必要的图片的网络请求,比源文件打30%
+        
+        
+        
     </script>
 </body>
 </html>
