@@ -15,7 +15,8 @@ $.ajaxPrefilter(function (options) {
 
     // 全局的ajax请求都挂上一个complete函数用来判断 是否有权限
     options.complete = function (res) {
-        if (res.responseJSON.status !== 0 && res.responseJSON.message !== '获取用户基本信息成功!') {
+        // console.log(res);
+        if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
             // 1.清除本地存储
             localStorage.removeItem('token');
             // 2.跳转回login页面

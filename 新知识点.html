@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // 1. iframe :内嵌框架 语法: <iframe name="指定当前iframe的名称 fm" src="规定iframe中显示的文档的url">  </iframe>
@@ -21,18 +23,37 @@
 
         // 6. 快速给表单赋值 使用layui中的form.val()方法 ;注意其中使用到了隐藏域<input type="hidden" name="id">;
 
-        // 7. 子页面调用父页面中的方法 使用window.parent.方法();
+        // 7. 子页面调用父页面中的方法 使用window.parent.方法(); 父页面的函数不能写在入口函数内,全局函数才能被子页面访问
 
         // 8. 使用cropper快速开发裁剪,按照步骤复制粘贴;
 
-        // 9. <input type="file" id="file" accept="image/png,image/jpg"> 使用accept属性可以设置选择文件的格式;
+        // 9. <input type="file" id="file" accept="image/png,image/jpeg"> 使用accept属性可以设置选择文件的格式;
 
         // 10 文件选择框监听到change事件后,可以通过e.target.files(伪数组)属性获取的选择的文件;
 
         // 11.base64文件减少一些不必要的图片的网络请求,比源文件打30%
-        
-        
-        
+
+        // 12.JS中通过<script type:'text/html'> html标签 < /script> 来引入HTML标签搭建结构;
+        // 渲染页面结构的方法:
+        //  1.直接在HTML文档中写html标签渲染页面
+        //  2.JS中用html标签的字符串渲染页面
+        //   2.1 直接写HTML标签字符串=> 渲染页面
+        //   2.2 模板引擎导出需要的HTML标签的字符串=> 渲染页面
+        //   2.3 类似模板引擎 在HTML文档中定义好需要的HTML标签字符串 => 渲染页面
+
+        // 13.表单中的HTML标签通过模板引擎成功渲染到页面结构中,form的自动渲染对其会失效;
+        //    需要表单form.render()内部所有表单重新渲染;
+
+        // 14.快速开发富文本编辑器
+
+        // 15.jump回调函数的两种触发方式: 1.切换页码和切换条目选项区域时都会触发   first返回值undefined
+        //                               2.调用laypage.render()时触发(会导致死循环)  first返回值1
+
+
+
+
+
     </script>
 </body>
+
 </html>

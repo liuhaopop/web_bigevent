@@ -19,7 +19,7 @@
         <div class="layui-card-body">
             <!-- form表单区 -->
             <form class="layui-form" lay-filter="userData">
-                <!-- 隐藏域 用来接收不需要显示的数据 -->
+                <!-- 隐藏域 用来接收不需要显示的数据: 先接受服务器返回的键值对,保存后期发起ajax请求时需要提交的参数-->
                 <input type="hidden" name="id">
                 <div class="layui-form-item">
                     <label class="layui-form-label">登录名称</label>
